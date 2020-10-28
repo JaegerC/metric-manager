@@ -1,4 +1,4 @@
-export const BACKEND = 'http://157.230.217.60';
+export const BACKEND = 'https://157.230.217.60';
 
 export const routesApi = {
     user_create: '/api/user/create',
