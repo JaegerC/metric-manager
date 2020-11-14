@@ -285,11 +285,11 @@ const DashBoard = () => {
         categoryAxis.sortBySeries = series;
         chart.data = data;
     }
-
+    
     return (
         <>
             <Paper elevation={10} className={classes.paper} >
-                <div className={classes.title}>Dispositivo ACH-001 - {user_devices.length > 1 ? 'Conectado' : 'Desconectado'}</div>
+                <div className={classes.title}>{connected ? realtime_devices[0].name : ""} - {connected ? 'Conectado' : 'Desconectado'}</div>
                 <div>
                     <div id="realTimeChart" style={{ width: '100%', height: '40vh' }} ></div>
                 </div>
